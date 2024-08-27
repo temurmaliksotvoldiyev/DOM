@@ -1,0 +1,31 @@
+// .container elementini tanlash
+const container = document.querySelector('.container');
+container.style.display = 'flex';
+container.style.height = '700px';
+
+// .left elementiga stil berish
+const leftDiv = document.querySelector('.left');
+leftDiv.style.width = '50%';
+leftDiv.style.backgroundColor = 'lightblue';
+
+// .right elementiga stil berish
+const rightDiv = document.querySelector('.right');
+rightDiv.style.width = '50%';
+rightDiv.style.backgroundColor = 'lightgreen';
+
+// Input elementini yaratish
+const input = document.createElement('input');
+input.type = 'text'; // Input turi
+input.placeholder = 'Enter text here'; // Placeholder matni
+
+// Input elementiga stil berish
+input.style.width = '300px'; // Kengligi
+input.style.padding = '10px'; // Ichki bo'shliq
+input.style.border = '1px solid #ddd'; // Chegara
+input.style.borderRadius = '5px'; // Burchaklarni yumshatish
+input.style.fontSize = '16px'; // Matn hajmi
+input.style.margin = '10px'; // Tashqi bo'shliq
+input.style.boxShadow = '0 4px 8px rgba(0,0,0,0.1)'; // Soyali chekka
+
+// Input elementini container ga qo'shish
+container.appendChild(input);
